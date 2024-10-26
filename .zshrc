@@ -10,12 +10,15 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
+# user configuration
 alias cat='batcat'
 alias pbcopy='xsel --clipboard --input'
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
-# Powerline10k configuration
+# key binding configuration
+bindkey '^H' backward-kill-word
+
+# powerline10k configuration
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
