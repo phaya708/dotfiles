@@ -6,6 +6,6 @@ curl -1sLf 'https://dl.cloudsmith.io/public/evilmartians/lefthook/setup.deb.sh' 
 sudo apt install lefthook
 
 # install task
-sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b /bin
+sudo sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b /bin
 
 sh $HOME/dotfiles/install/zsh.sh
