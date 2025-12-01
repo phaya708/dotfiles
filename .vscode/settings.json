@@ -1,0 +1,75 @@
+{
+  // Files
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+
+  // Editor
+  "editor.formatOnSave": true,
+  "editor.detectIndentation": true,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.rulers": [80, 120],
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": false,
+
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  // Workbench
+  "workbench.colorTheme": "GitHub Dark",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.activityBar.location": "top",
+  "workbench.panel.showLabels": false,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.list.defaultFindMode": "filter",
+  "workbench.list.typeNavigationMode": "automatic",
+
+  // Security
+  "security.promptForRemoteFileProtocolHandling": false,
+
+  // Extensions
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+
+  // GitHub Copilot
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    { "text": "Follow the conventional commit message format." },
+    { "text": "Limit the first line to 72 characters or less." }
+  ],
+
+  // JSON
+  "json.schemaDownload.enable": true,
+  "[json][jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.autoIndent": "advanced",
+    "files.insertFinalNewline": true
+  },
+
+  // YAML
+  "yaml.format.enable": true,
+  "[yaml][dockercompose][github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "files.insertFinalNewline": true
+  },
+
+  // TOML
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml",
+    "files.insertFinalNewline": true
+  },
+
+  // Go
+  "[go]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "golang.go"
+  }
+}
